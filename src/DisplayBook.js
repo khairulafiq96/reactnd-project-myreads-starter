@@ -24,9 +24,8 @@ class DisplayBook extends React.Component {
           <div>
           {book.map((book)=>(
             
-            <div>
-              {console.log(book)}
-            <div className="book">
+            <div key={book.id}>
+            <div className="book" >
                 <div className="book-top">
                   <div
                     className="book-cover"

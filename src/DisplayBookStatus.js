@@ -45,12 +45,10 @@ class DisplayBookStatus extends React.Component {
 
               {shelves.map((item)=> {
                  const booksOnShelf = this.props.book.filter(books=>books.shelf === item.id);
-                 console.log("RUnning Display Book Status")
-                 console.log(booksOnShelf)
                return (
-                    <div>
+                    <div key={item.id}>
                     <h2 className="bookshelf-title">{item.shelfName}</h2>
-                    <div>
+                    <div >
                     <DisplayBook 
                       book={booksOnShelf}
                       currentShelf={item.shelf}

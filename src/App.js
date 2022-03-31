@@ -3,7 +3,7 @@ import * as BooksAPI from './BooksAPI'
 import './App.css'
 import DisplayBookStatus from './DisplayBookStatus'
 import BookSearch from './BookSearch'
-import {Route} from 'react-router-dom'
+import {Route, Link} from 'react-router-dom'
 
 class BooksApp extends React.Component {
   constructor(props) {
@@ -85,10 +85,17 @@ class BooksApp extends React.Component {
 
             </Route>
 
-
+            <div className="open-search">
+            <Link to="/search" className="open-search">
+              <button></button>
+            </Link>
+          </div>
+        
             
 
         </div>
+
+        
     )
   }
 }

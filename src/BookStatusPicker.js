@@ -27,7 +27,7 @@ class BookStatusPicker extends React.Component {
         value={book.shelf}
         onChange={this.handleChange}
       >
-          <option value="currentlyReading">{book.shelf}</option>
+          
           <option value="currentlyReading">Currently Reading</option>
           <option value="wantToRead">Want to read</option>
           <option value="read">Read</option>
