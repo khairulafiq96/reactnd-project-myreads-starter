@@ -15,7 +15,8 @@ class DisplayBookStatus extends React.Component {
     const shelves = [
       { shelfName: "Currently Reading", id: "currentlyReading" },
         { shelfName: "Want to Read", id: "wantToRead" },
-        { shelfName: "Read", id: "read" }
+        { shelfName: "Read", id: "read" },
+        { shelfName: "None", id: "none" }
     ]
 
 

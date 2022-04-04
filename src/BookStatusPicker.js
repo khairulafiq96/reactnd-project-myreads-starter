@@ -31,6 +31,7 @@ class BookStatusPicker extends React.Component {
           <option value="currentlyReading">Currently Reading</option>
           <option value="wantToRead">Want to read</option>
           <option value="read">Read</option>
+          <option value="none">None</option>
 
       </select>
     )
