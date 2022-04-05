@@ -16,7 +16,8 @@ class BookSearch extends React.Component {
             query : query
         }))
 
-        if( query.trim() !== ""){
+        if( query.trim() === '' || query.trim() === undefined){
+            //console.log(typeof(query.trim()))
             this.setState(() => ({ searchBooks: [], }));
         }
 
